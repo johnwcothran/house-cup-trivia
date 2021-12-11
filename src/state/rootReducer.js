@@ -1,7 +1,7 @@
 import { combineReducers } from 'redux-loop';
-import feature1 from './feature-1/ducks';
+import question from './question/ducks';
 
 const rootReducer = combineReducers({
-    feature1
+    question
 });
 export default rootReducer;

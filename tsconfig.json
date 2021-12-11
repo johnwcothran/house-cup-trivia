@@ -1,0 +1,38 @@
+{
+    "compilerOptions": {
+      "baseUrl": ".",
+      "outDir": "build/dist",
+      "module": "esnext",
+      "target": "es5",
+      "lib": ["es6", "dom", "esnext"],
+      "sourceMap": true,
+      "allowJs": true,
+      "jsx": "react",
+      "moduleResolution": "node",
+      "rootDir": "src",
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noImplicitAny": true,
+      "importHelpers": true,
+      "strictNullChecks": true,
+      "suppressImplicitAnyIndexErrors": true,
+      "noUnusedLocals": true,
+      "allowSyntheticDefaultImports": true
+    },
+    "exclude": [
+      "node_modules",
+      "public",
+      "build",
+      "scripts",
+      "acceptance-tests",
+      "webpack",
+      "jest",
+      "src/setupTests.ts",
+      "gatsby-config.js",
+      "gatsby-browser.js",
+      "gatsby-ssr.js",
+      "gatsby-node.js",
+      "auth0.min.esm.js",
+    ]
+  }

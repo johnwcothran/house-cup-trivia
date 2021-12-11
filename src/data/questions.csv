@@ -1,0 +1,118 @@
+id,question,answer,points,level,category
+0,Test Q,Test A,10,Second Year,defense
+1,What is Gilderoy Lockhart's secret ambition?,To rid the world of evil and market his own line of hair care potions,25,Fifth Year,defense
+2,How old did Harry Potter turn on his birthday at the beginning of the Chamber of Secrets?,Twelve years old,10,Second Year,history
+3,What were Uncle Vernon’s instructions to Harry on what he should do during their dinner party?,Do be in his bedroom making no noise and pretending he wasn’t there,15,Third Year,muggle
+4,How did Riddle’s diary end up in Ginny's possession?,Lucias Malfoy put it in Ginny’s Transfiguration book in Flourish and Blotts.,15,Third Year,defense
+5,Who signed the warning letter from the Ministry of Magic sent to Harry at the Dursley’s? (Bonus for the department in the Ministry of Magic office where they worked),Mafalda Hopkirk - Improper Use of Magic Office,100,Seventh Year,muggle
+6,What is the Dursley's street address?,Number 4 Privet Drive,5,First Year,history
+7,Who did the Dursleys host for dinner?,Mr. and Mrs. Mason,15,Third Year,
+8,"What did Ron, Fred, and George use to rescue Harry from the Dursleys?",A flying car,5,First Year,history
+9,What is the make and model of the Weasley's flying car?,Ford Anglia,20,Fourth Year,muggle
+10,What kind of broomstick does Harry have?,A Nimbus Two Thousand,5,First Year,history
+11,What charm did Dobby perform on Aunt Petunia's masterpiece of a pudding?,A hover charm,5,First Year,charms
+12,What decree was Harry accused of breaking when Dobby peformed a spell at the Dursley's,Decree for the Reasonable Restriction of Underage Sorcery,100,Seventh Year,charms
+13,Name Harry's owl.,Hedwig,5,First Year,care
+14,What is the Weasley home called?,The Burrow,5,First Year,history
+15,"Name the Weasley's pitiful, bedraggled owl.",Errol,10,Second Year,care
+16,What is the name of Percy's new owl?,Hermes,15,Third Year,care
+17,In what department does Arthur Weasley work for the Ministry of Magic?,The Misuse of Muggle Artifacts Office,20,Fourth Year,muggle
+18,What is the name of the old warlock that works with Arthur Weasley,Perkins,100,Seventh Year,muggle
+19,What is the name of the village near the Burrow?,Ottery St. Catchpole,100,Seventh Year,history
+20,What is the name of the book Mrs. Weasley consults to de-gnome a garden?,Gilderoy Lockhart's Guide to Household Pests,20,Fourth Year,care
+21,What chore does Mrs. Weasley assign the boys the morning Harry arrives at the Burrow?,De-gnoming the garden,5,First Year,care
+22,Name Ron's favorite Quidditch team.,The Chudley Cannons,20,Fourth Year,history
+23,Where are Ron's Favorite Quidditch team ranked in the league?,Ninth in the league,25,Fifth Year,history
+24,Name all seven of Lockhart's books required for Second Year students.,"Break with a Banshee, Gadding with Ghouls, Holidays with Hags, Travels with Trolls, Voyages with Vampires, Wanderings with Werewolves, and Year with a Yeti",20,Fourth Year,defense
+25,Who is the eldest Weasley brother?,Bill,25,Fifth Year,history
+26,What does Charlie Weasley do for a living?,Studies dragons in Romania,25,Fifth Year,history
+27,What does Bill Weasley do for a living?,Works for Gringotts Bank in Egypt,25,Fifth Year,history
+28,What model is Ron's old Quidditch broomstick?,Shooting Star,20,Fourth Year,history
+29,Where Hogwarts students have to go to get supplies for school term?,Diagon Alley,5,First Year,history
+30,How do Harry and the Weasleys travel to Diagon Alley?,Floo Powder,10,Second Year,history
+31,Where does Harry accidentally go his first time using Floo powder?,Knockturn Alley,15,Third Year,history
+32,To whom is Lucius Malfoy selling items that might embarass him?,Mr Borgin,25,Fifth Year,defense
+33,What is the name of the shop that Harry accidentally goes to instead of Diagon Alley?,Borgin and Burkes,25,Fifth Year,defense
+34,Who found Harry and led him back to Diagon Alley?,Hagrid,10,Second Year,defense
+35,What was Hagrid looking for in Knockturn Alley when he found Harry?,Flesh Eatin' Slug Repellent,20,Fourth Year,defense
+36,Name the wizard bank in Diagon Alley.,Grigotts,5,First Year,history
+37,Name the pub/inn where wizards go to get a drink in Diagon Alley.,Leaky Cauldron,5,First Year,history
+38,"Name the deeply boring book which Percy was deeply immersed in upon being found by Harry, Ron and Hermione in Diagon Alley.",Prefects Who Gained Power,100,Seventh Year,history
+39,Name the bookstore in Diagon Alley.,Flourish and Blotts,10,Second Year,history
+40,What is the name of Gilderoy Lockhart's autobiography?,Magical Me,15,Third Year,defense
+41,Name the popular wizarding newspaper.,Daily Prophet,10,Second Year,history
+42,How did Ron and Harry get from Kings Cross to Hogwarts?,Mr. Weasley's bewitched flying car,5,First Year,muggle
+43,"Which newspaper did Snape reveal to Harry and Ron, with the headline ""FLYING FORD ANGLIA MYSTIFIES MUGGLES""?",The Evening Prophet,,Fourth Year,muggle
+44,What did Harry and Ron crash into upon arriving at Hogwarts in the flying car?,The Whomping Willow,10,Second Year,history
+45,What is the password to Gryffindor Tower?,"""Wattlebird""",20,Fourth Year,history
+46,What is the secret door to get into Gryffindor Tower?,A portrait of a fat lady,15,Third Year,history
+47,Name all five of the Gryffindor Second Year boys,"Harry Potter, Ronald Weasley, Seamus Finnigan, Dean Thomas, and Neville Longbottom",50,Sixth Year,history
+48,What book was Hermione reading when Ron recieved his Howler?,"Voyages with Vampires, by Gilderoy Lockhart",50,Sixth Year,defense
+49,Name Ron's pet rat.,Scabbers,20,Fourth Year,care
+50,Name the Herbology teacher.,Professor Sprout,15,Third Year,care
+51,What is Professor Lockhart claiming to show Professor Sprout how to doctor before Harry's first class?,A Whomping Willow,20,Fourth Year,care
+52,What award did Professor Lockhart win five times in a row?,Witch Weekly's Most-Charming-Smile Award,25,Fifth Year,defense
+53,What is the first activity in Harry's first Herbology class?,Re-potting mandrakes,15,Third Year,care
+54,Who can tell me the properties of the Mandrake?,"Mandrake, or Mandragora, is a powerful restorative. It is used to restore people who have been transfigured or cursed to their original state.",25,Fifth Year,care
+55,What happens when someone hears the cry of the Mandrake?,They die,10,Second Year,care
+56,"What is the name of the plant that is ""teething"" during the re-potting of the Mandrakes?",Venemous Tentacula,100,Seventh Year,care
+57,"Who is the Hufflepuff boy who joins Harry, Ron, and Hermione's Mandrake re-potting group?",Justin Finch-Fletchley,50,Sixth Year,care
+58,With what did Ron patch is broken wand?,Borrowed Spellotape,25,Fifth Year,charms
+59,What was Harry's first assignment in his first Transfiguration class?,Turning beetles into buttons,25,Fifth Year,charms
+60,"Name the small, mousy-haired Gryffindor First Year who is always trying to take a picture of Harry?",Colin Creevey,15,Third Year,history
+61,Name Draco Malfoy's two side-kicks.,Crabbe and Goyle,10,Second Year,defense
+62,What is Gilderoy Lockhart's favorite color?,Lilac,20,Fourth Year,defense
+63,What would Gilderoy Lockhart's ideal gift be?,Harmony between all magic and non-magic people (but he wouldn't say no to Ogden's Old Firewhiskey),25,Fifth Year,defense
+64,What kind of creatures does Professor Lockhart bring to the first Defense Against the Dark Arts class?,Freshly caught cornish pixies,15,Third Year,defense
+65,Name the Charms teacher.,Professor Flitwick,15,Third Year,charms
+66,Name the four balls involved in a Quidditch match.,"1 Quaffle, 2 Bludgers, and the Golden Snitch",15,Third Year,history
+67,Name Gryffindor Quidditch Team's three chasers.,"Alicia Spinnet, Katie Bell, and Angelina Johnson",100,Seventh Year,history
+68,Name Gryffindor Quidditch Team's goalkeeper,Oliver Wood,25,Fifth Year,history
+69,How did Malfoy get on the Slytherin Quidditch Team,His father bought the whole team Nimbus Two Thousand and Ones,10,Second Year,history
+70,"What happened when Ron's curse backfired, which was intended for Malfoy for calling Hermione ""Mudblood""",He started vomiting slugs,10,Second Year,history
+71,Why were Hagrid's pumpkins growing so large?,They were under an Engorgement Charm,15,Third Year,charms
+72,Name the Hogwarts caretaker,Argus Filch,5,First Year,history
+73,Name the Hogwarts caretaker's assistant cat.,Mrs. Norris,5,First Year,care
+74,"During Ron's detention, what did he vomit slugs on after polishing the Quidditch Cup fourteen times?",A Special Award for Services to the School,100,Seventh Year,history
+75,What is the name of the ghost who haunts Gryffindor Tower?,Nearly Headless Nick,5,First Year,history
+76,How did Nearly Headless Nick become nearly headless?,He was struck forty five times in the neck with a blunt axe,50,Sixth Year,history
+77,What two activites could Nearly Headless Nick not partake if her were a part of the Headless Hunt?,Horseback Head-Juggling and Head Polo,100,Seventh Year,history
+78,Name the school poltergeist.,Peeves,10,Second Year,history
+79,"What did Harry find on Filch's desk, indicating he was a squib.",Quickspell: A Correspondance Course in Beginner's Magic,50,Sixth Year,charms
+80,What did Peeves break that got Harry out of punishment for befouling the castle.,A very valuable Vanishing Cabinet,100,Seventh Year,history
+81,How long has Nearly Headless Nick been dead?,500 years,20,Fourth Year,history
+82,In what year did Nearly Headless Nick die?,"October 31, 1492",100,Seventh Year,history
+83,"Name the Slytherin Ghost, covered in silver bloodstains.",The Bloody Baron,25,Fifth Year,history
+84,What is Nearly Headless Nick's full name?,Sir Nicholas de Mimsy-Porpington,50,Sixth Year,history
+85,Who was the first victom of the opening of the Chamber of Secrets?,Mrs. Norris,15,Third Year,defense
+86,Name the History of Magic teacher.,Professor Binns,25,Fifth Year,history
+87,Name the headmaster when Tom Riddle attended Hogwarts,Professor Dippett,100,Seventh Year,history
+88,What kind of creature is Ron morbidly afraid?,Spiders,5,First Year,care
+89,What is the name of the ghost who haunts the girl's third floor bathroom?,Moaning Myrtle,5,First Year,history
+90,What is the name of the book in the restricted section that contains the recipe for the Polyjuice Potion?,Moste Potente Potions,50,Sixth Year,defense
+91,What did Professor Lockhart offer as the reward for the best poem about his defeat of the Wagga Wagga Werewolf?,A signed copy of Magical Me,100,Seventh Year,defense
+92,What is the name of the Hogwarts Librarian?,Madam Pince,50,Sixth Year,care
+93,"When does the Polyjuice Potion ingredient ""fluxweed"" need to be picked?",During a full moon,50,Sixth Year,defense
+94,Name the Quidditch teacher.,Madam Hooch,20,Fourth Year,history
+95,Who bewitched the Bludger to attack Harry in his first Quidditch match?,Dobby,10,Second Year,charms
+96,What happened when Lockhart attempted to mend Harry's broken arm?,His arm bones disappeared entirely,10,Second Year,charms
+97,Name the Hogwarts nurse.,Madam Pomfrey,15,Third Year,charms
+98,What did Madam Pomfrey give Harry to grow his arm bones back?,A bottle of Skele-Gro,20,Fourth Year,charms
+99,"Who was the second victim of the Chamber of Secrets, who was taken to the Hospital Wing while Harry was growing his arm bones back?",Colin Creevey,20,Fourth Year,defense
+100,Who were the two teachers in charge of the Dueling Club?,Professor Snape and Professor Lockhart,10,Second Year,defense
+101,What is the disarming spell?,Expelliarmus,10,Second Year,charms
+102,What is the Tickling Charm with witch Harry hits Malfoy?,Rictusempra,25,Fifth Year,charms
+103,Who was Hermione partnered with during the Dueling Club,Millicent Bulstrode,50,Sixth Year,charms
+104,What is a wizard called who can talk to snakes?,Parselmouth,20,Fourth Year,defense
+105,Which Hufflepuff did Harry overhear in the library speculating that Harry was the heir of Slytherin?,Ernie MacMillian,25,Fifth Year,muggle
+106,How did Justin Finch-fletchley get petrified?,Through Nearly Headless Nick,10,Second Year,muggle
+107,What is the password to Dumbledore's office?,Lemon Drop,20,Fourth Year,history
+108,Who does Hermione attempt to become via Polyjuice Potion?,Millicent Bulstrode,15,Third Year,defense
+109,What is the password to the Slytherin common room?,pure-blood,25,Fifth Year,defense
+110,Through what did Hermione get petrified?,"A small, circular mirror",15,Third Year,defense
+111,"When Hagrid is being arrested, what does he tell Ron and Harry to follow?",The spiders,10,Second Year,defense
+112,How did the Basilisk get around Hogwarts?,Pipes,20,Fourth Year,defense
+113,How did Harry destroy Tom Riddle's diary?,He stabbed it with the fang from the Basilisk,5,First Year,defense
+114,What powerful wizard did Tom Riddle become?,Lord Voldemort,5,First Year,defense
+115,"What did Harry pretend to do to scare Dudley, thinking Harry was doing magic?",Turn him into a pig,50,Sixth Year,muggle
+116,"How was the flying car designed to get above the clouds, undetected by Muggles",Invisibility Booster,15,Third Year,muggle

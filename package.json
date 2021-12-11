@@ -5,14 +5,24 @@
   "version": "0.1.0",
   "author": "John Cothran <johnwcothran@gmail.com>",
   "dependencies": {
+    "@material-ui/core": "^4.9.3",
+    "@material-ui/icons": "^4.9.1",
+    "@material-ui/styles": "^4.9.0",
+    "@types/ramda": "^0.26.41",
+    "@types/react-helmet": "^5.0.15",
+    "@types/react-redux": "^7.1.7",
     "gatsby": "^2.13.45",
     "gatsby-image": "^2.2.7",
     "gatsby-plugin-manifest": "^2.2.4",
+    "gatsby-plugin-material-ui": "^2.1.6",
     "gatsby-plugin-offline": "^2.2.4",
     "gatsby-plugin-react-helmet": "^3.1.2",
     "gatsby-plugin-react-redux": "^1.0.10",
     "gatsby-plugin-sharp": "^2.2.9",
+    "gatsby-plugin-typescript": "^2.1.27",
     "gatsby-source-filesystem": "^2.1.7",
+    "gatsby-theme-material-ui": "^1.0.8",
+    "gatsby-transformer-csv": "^2.1.26",
     "gatsby-transformer-sharp": "^2.2.5",
     "prop-types": "^15.7.2",
     "ramda": "^0.26.1",
@@ -22,7 +32,8 @@
     "react-redux": "^7.1.0",
     "redux": "^4.0.4",
     "redux-logger": "^3.0.6",
-    "redux-loop": "^5.0.1"
+    "redux-loop": "^5.0.1",
+    "shuffle-array": "^1.0.1"
   },
   "devDependencies": {
     "prettier": "^1.18.2"
