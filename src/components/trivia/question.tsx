@@ -2,6 +2,7 @@ import * as React from 'react';
 import * as R from 'ramda';
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
+
 import {
   Typography,
   Dialog, DialogTitle, DialogContent,
@@ -17,6 +18,7 @@ import Gryffindor from '../../images/Gryffindor.png';
 import Hufflepuff from '../../images/Hufflepuff.png';
 import Ravenclaw from '../../images/Ravenclaw.png';
 import Slytherin from '../../images/Slytherin.png';
+import parchment from '../../images/parchment.jpeg';
 import {
     update
 } from '../../state/question/ducks';
@@ -49,35 +51,68 @@ function Component ({
         answer: null,
         points: null,
     }
-    return <Dialog open={question.activeQuestion.question ? true : false} onClose={() => update([], R.pipe(
+    const levels = [
+        { name: 'First Year', points: 25 },
+        // { name: 'Second Year', points: 10 },
+        { name: 'Third Year', points: 50 },
+        // { name: 'Fourth Year', points: 20 },
+        { name: 'Fifth Year', points: 75 },
+        // { name: 'Sixth Year', points: 50 },
+        { name: 'Seventh Year', points: 100 },
+    ];
+    const awardPoints = ({crest, question}) => update([], R.pipe(
+        R.assocPath(['activeQuestion'], emptyQuestion),
+        R.assocPath(['status'], 'question'),
+        R.assocPath(['score', crest.house], parseInt(R.path(['score', crest.house], question)) + parseInt(levels.find(l => l.name === activeQuestion.level)?.points)),
+        R.assocPath(['usedQuestions'], R.append(activeQuestion.id, question.usedQuestions)),
+    )(question));
+    return <Dialog PaperProps={{
+        style: {
+            background: `url(${parchment})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+        }
+    }} maxWidth={'xl'} open={question.activeQuestion.question ? true : false} onClose={() => update([], R.pipe(
         R.assocPath(['activeQuestion'], emptyQuestion),
         R.assocPath(['status'], 'question')
     )(question))}>
         <DialogTitle>
-            {question.status === 'question' && <Typography align='center' variant='h4'>{activeQuestion.question}</Typography>}
-            {question.status === 'answer' && <Typography onClick={() => update(['status'], 'question')} align='center' variant='h4'>{activeQuestion.answer}</Typography>}
+            {<Typography align='center' style={{fontFamily: 'sans-serif', fontSize: 32, fontWeight: 900}}>{activeQuestion.question}</Typography>}
+            {/* {question.status === 'answer' && <Typography onClick={() => update(['status'], 'question')} align='center' variant='h4'>{activeQuestion.answer}</Typography>} */}
         </DialogTitle>
         <DialogContent>
-            {/* <Typography align='center'>Question text here ...</Typography> */}
+            {question.activeQuestion.options && 
+                <div onClick={() => update(['status'], 'answer')} style={{display: 'grid', gridTemplateColumns: '1fr 1fr', margin: 'auto', gap: '48px', maxWidth: 800}}>
+                {question.activeQuestion.options.map((option, i) => <div
+                    key={i}
+                    style={{
+                        border: (question.status === 'answer' && activeQuestion.answer === option) ? `3px solid ${green[700]}` : 'none',
+                        borderRadius: '24px',
+                        padding: '12px 24px'
+                    }}>
+                <Typography style={{
+                    fontSize: 32,
+                    color: (question.status === 'answer' && activeQuestion.answer === option) ? green[700] : 'black'
+                }} >{option}</Typography>
+                </div>)}
+            </div>}
             {question.status === 'answer' && <div style={{display: 'flex', justifyContent: 'space-between', marginTop: 24}}>
                 {crests.map((crest, idx) => <div style={{display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center'}}>
                     <img
                         src={crest.src}
+                        onClick={() => awardPoints({crest, question})}
                         style={{width: 80, marginBottom: 12}}
+
                     />
                     <Button
-                        style={{textTransform: 'none', color: green[500]}}
-                        onClick={() => update([], R.pipe(
-                            R.assocPath(['activeQuestion'], emptyQuestion),
-                            R.assocPath(['status'], 'question'),
-                            R.assocPath(['score', crest.house], parseInt(R.path(['score', crest.house], question)) + parseInt(activeQuestion.points)),
-                            R.assocPath(['usedQuestions'], R.append(activeQuestion.id, question.usedQuestions)),
-                        )(question))}
+                        style={{textTransform: 'none', color: green[700]}}
+                        onClick={() => awardPoints({crest, question})}
                     >
-                        <Typography align='center' variant='caption'>{`${activeQuestion.points} points to ${crest.house}!`}</Typography>
+                        <Typography align='center' variant='caption'>{`${levels.find(l => l.name === activeQuestion.level)?.points} points to ${crest.house}!`}</Typography>
                     </Button>
-                    <Button
-                        style={{textTransform: 'none', color: red[500]}}
+                    {/* <Button
+                        style={{textTransform: 'none', color: red[700]}}
                         onClick={() => update([], R.pipe(
                             R.assocPath(['activeQuestion'], emptyQuestion),
                             R.assocPath(['status'], 'question'),
@@ -86,10 +121,11 @@ function Component ({
                         )(question))}
                     >
                         <Typography align='center' variant='caption'>{`${activeQuestion.points} points from ${crest.house}!`}</Typography>
-                    </Button>
+                    </Button> */}
                 </div>)}
             </div>}
-            {question.status === 'question' && <Button fullWidth onClick={() => update(['status'], 'answer')}>See Answer</Button>}
+            
+            {question.status === 'question' && <Button style={{marginTop: '48px'}} fullWidth onClick={() => update(['status'], 'answer')}>See Answer</Button>}
             {question.status === 'answer' && <Button onClick={() => update([], R.pipe(
                             R.assocPath(['activeQuestion'], emptyQuestion),
                             R.assocPath(['status'], 'question'),

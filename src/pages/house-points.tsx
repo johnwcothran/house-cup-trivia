@@ -6,11 +6,12 @@ import { bindActionCreators } from "redux";
 import {
   TextField,
   IconButton,
-  Button
+  Button,
+  Typography
 } from '@material-ui/core';
 import { ArrowForward } from '@material-ui/icons/';
 import {
-  yellow
+  yellow, green
 } from '@material-ui/core/colors';
 import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
@@ -48,7 +49,7 @@ function IndexPage ({
       </Helmet>
         <div style={{background: 'black'}}>
             <div style={{display: 'flex', justifyContent: 'flex-end', marginBottom: -59, padding: 8}}>
-                <Link to='trivia/'>
+                <Link to='book3/trivia/'>
                     <IconButton style={{color: 'white'}}><ArrowForward /></IconButton>
                 </Link>
             </div>
@@ -73,18 +74,46 @@ function IndexPage ({
                     height: '100vh',
                     width: '100vw',
                 }}>
-                    {crests.map((crest, idx) => <div key={idx}>
+                    {crests.map((crest, idx) => {
+                      console.log(crest.house);
+                    return (<div key={idx}>
                         <img style={crest.style} src={crest.src} />
                         <input
                             style={crest.style}
                             type='number'
                             onChange={(e) => {e.preventDefault(); update(['score', crest.house], e.target.value)}}
                             value={parseInt(R.path(['score', crest.house], question))} />
+                          <div>
+                            <Button
+                                style={{textTransform: 'none', color: green[700]}}
+                                onClick={() => update(['score', crest.house], parseInt(question.score[crest.house]) + 25)}
+                            >
+                                <Typography align='center' variant='caption'>{`25 points to ${crest.house}!`}</Typography>
+                            </Button>
+                            <Button
+                                style={{textTransform: 'none', color: green[700]}}
+                                onClick={() => update(['score', crest.house], parseInt(question.score[crest.house]) + 50)}
+                            >
+                                <Typography align='center' variant='caption'>{`50 points to ${crest.house}!`}</Typography>
+                            </Button>
+                            <Button
+                                style={{textTransform: 'none', color: green[700]}}
+                                onClick={() => update(['score', crest.house], parseInt(question.score[crest.house]) + 75)}
+                            >
+                                <Typography align='center' variant='caption'>{`75 points to ${crest.house}!`}</Typography>
+                            </Button>
+                            <Button
+                                style={{textTransform: 'none', color: green[700]}}
+                                onClick={() => update(['score', crest.house], parseInt(question.score[crest.house]) + 100)}
+                            >
+                                <Typography align='center' variant='caption'>{`100 points to ${crest.house}!`}</Typography>
+                            </Button>
+                          </div>
                         {/* <div style={crest.style}>
                             <Button fullWidth style={{marginRight: 2, border: `1px solid ${yellow[500]}`, color: yellow[500]}}>-</Button>
                             <Button fullWidth style={{marginLeft: 2, border: `1px solid ${yellow[500]}`, color: yellow[500]}}>+</Button>
                         </div> */}
-                    </div>)}
+                    </div>)})}
                 </div>
             </div>
 

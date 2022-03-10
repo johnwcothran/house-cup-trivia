@@ -25,7 +25,7 @@ function IndexPage ({
       <Helmet>
         <link href="https://fonts.googleapis.com/css?family=Henny+Penny&display=swap" rel="stylesheet" />
       </Helmet>
-        <Link style={{textDecoration: 'none'}} to='/house-points/'>
+        
           <div style={{background: 'black'}}>
             <div
               style={{
@@ -47,17 +47,24 @@ function IndexPage ({
                   alignItems: 'center'}}>
                   <Typography
                     style={{color: yellow[600], fontWeight: 'bold', fontFamily: 'Henny Penny'}}
-                    variant='h1'>2020 House Cup</Typography>
-                  <Typography
-                    variant='h4'
-                    style={{color: 'white', fontWeight: 'bold', fontFamily: 'Henny Penny'}}
-                    >Ordinary Wizarding Levels</Typography>
+                    variant='h1'>House Cup Trivia</Typography>
+                  <Link style={{textDecoration: 'none'}} to='/trivia/'>
+                    <Typography
+                      variant='h4'
+                      style={{color: 'white', fontWeight: 'bold', fontFamily: 'Henny Penny', margin: 32}}
+                      >Book 2: The Chamber of Secrets</Typography>
+                  </Link>
+                  <Link style={{textDecoration: 'none'}} to='/book2/trivia/'>
+                    <Typography
+                      variant='h4'
+                      style={{color: 'white', fontWeight: 'bold', fontFamily: 'Henny Penny', margin: 32}}
+                      >Book 3: The Prisoner of Azkaban</Typography>
+                  </Link>
                 </div>
                 
               </div>
 
           </div>
-        </Link>
     </div>
   );
 };
